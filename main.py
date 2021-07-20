@@ -33,4 +33,10 @@ t.goto(0,83)
 t.goto(20,95)
 t.penup()
 t.home()
-
+i=290
+while i<-290:
+  i-=50
+  t.goto(-55,i)
+  t.pendown()
+  t.forward(30)
+  t.penup()
