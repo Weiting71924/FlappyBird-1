@@ -33,3 +33,14 @@ t.goto(0,83)
 t.goto(20,95)
 t.penup()
 t.home()
+t.right(90)
+i=290
+while i>-290:
+  i-=50
+  t.goto(-75,i)
+  t.pendown()
+  t.pencolor("red")
+  t.forward(30)
+  t.pencolor("white")
+  t.backward(30)
+  t.speed(0)
