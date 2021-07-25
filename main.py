@@ -14,9 +14,7 @@ while True:
     t=input('\n輸入代號:')
     if t=='a':
       l=input('\n輸入克數:')
-      l_lobo.append(l+'g')
-      if l in l_lobo:
-        continue
+      l_lobo.append(l)
       ll=input('\n刀工:')
       l_lobo.append(ll)
     if t=='b':
