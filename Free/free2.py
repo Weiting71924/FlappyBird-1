@@ -1,9 +1,9 @@
-l_pork=['豬肉']
-l_lobo=['胡蘿蔔']
-l_bech=['荸薺']
+l1=['豬肉','?','?']
+l2=['胡蘿蔔','?','?']
+l3=['荸薺','?','?']
 while True:
   print('\n選擇步驟')
-  print("\n1  增加菜單")
+  print("\n1  修改菜單")
   print("\n2  顯示菜單")
   q=input('\n輸入步驟:')
   if q=='1':
@@ -14,21 +14,23 @@ while True:
     t=input('\n輸入代號:')
     if t=='a':
       l=input('\n輸入克數:')
-      l_lobo.append(l)
+      l2.pop(1)
+      l2.append(l)
       ll=input('\n刀工:')
-      l_lobo.append(ll)
+      l2.pop(2)
+      l2.append(ll)
     if t=='b':
       b=input('\n輸入克數:')
-      l_lobo.append(b+'g')
+      l3.append(b+'g')
       bb=input('刀工:')
-      l_lobo.append(bb)
+      l3.append(bb)
     if t=='c':
       p=input('\n輸入克數:')
-      l_lobo.append(p+'g')
+      l1.append(p+'g')
       pp=input('刀工:')
-      l_lobo.append(pp)
+      l1.append(pp)
 
   if q=='2':
-    print(l_lobo)
-    print(l_bech)
-    print(l_pork)
+    print(l1)
+    print(l2)
+    print(l3)
